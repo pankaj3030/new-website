@@ -86,3 +86,10 @@ button { cursor:pointer; }
     .hero { padding:5rem 1rem; }
     .form-grid { grid-template-columns:1fr; }
 }
+
+/* Reveal animation */
+.section, .service-card, blockquote {
+    opacity:0; transform:translateY(20px);
+    transition:opacity .6s ease-out, transform .6s ease-out;
+}
+.visible { opacity:1; transform:none; }
